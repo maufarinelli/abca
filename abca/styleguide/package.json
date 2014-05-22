@@ -15,6 +15,7 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "gulp": "^3.6.2",
+    "gulp-compass": "^1.1.9",
     "gulp-ruby-sass": "^0.4.3",
     "gulp-util": "^2.2.14"
   }

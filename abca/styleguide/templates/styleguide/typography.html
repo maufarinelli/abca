@@ -1,0 +1,127 @@
+{% extends 'styleguide/index.html' %}
+{% block content %}
+    <h2>Typography</h2>
+
+    <h3 id="base-font-size">Base font-size</h3>
+    <p>Used to calculate all others units of ABCA, as we use <code>rem</code> for font-sizes, etc.</p>
+    <div class="highlight">
+        <pre>
+            <code>
+    h1, .h1 {
+        font-size: 3.6rem; // 36px for 10px font base // 43.2px for 12px font base
+    }
+
+    h2, .h2 {
+        font-size: 3.0rem; // 30px for 10px font base // 36px for 12px font base
+    }
+            </code>
+        </pre>
+    </div>
+    <div class="example example-type">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>Media-query</th>
+                    <th>Font-family</th>
+                    <th>Font-size</th>
+                    <th>Text-color</th>
+                </tr>
+                <tr>
+                    <td>all others</td>
+                    <td>Base</td>
+                    <td>Oxygen</td>
+                    <td>10px</td>
+                    <td>#000</td>
+                </tr>
+                <tr>
+                    <td>Large devices</td>
+                    <td>Base</td>
+                    <td>Oxygen</td>
+                    <td>12px</td>
+                    <td>#000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 id="base-font-size">Font-size variation</h3>
+    <div class="example example-type">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>Resolution</th>
+                    <th>Font Size base</th>
+                </tr>
+                <tr>
+                    <td>Extra small devices</td>
+                    <td>14px</td>
+                </tr>
+                <tr>
+                    <td>Small devices (Tablets)</td>
+                    <td>14px</td>
+                </tr>
+                <tr>
+                    <td>Medium devices (Desktops)</td>
+                    <td>14px</td>
+                </tr>
+                <tr>
+                    <td>Large devices (Desktops)</td>
+                    <td>16px</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 id="heading">Heading</h3>
+    <p>As Bootstrap, .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+
+    <div class="example example-type">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><h1>h1. ABCA heading</h1></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 36px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 43.2px</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h2>h2. ABCA heading</h2></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 30px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 36px</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>h3. ABCA heading</h3></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 24px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 28.8px</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>h4. ABCA heading</h4></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 18px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 21.6px</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h5>h5. ABCA heading</h5></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 14px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 16.8px</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h6>h6. ABCA heading</h6></td>
+                    <td>
+                        <span class="hidden-lg">Semibold 12px</span>
+                        <span class="hidden-md hidden-sm hidden-xs">Semibold 14.4px</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

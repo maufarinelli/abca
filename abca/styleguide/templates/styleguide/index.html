@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ABCA Styleguide</title>
+    <link href="http://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../static/css/normalize.css">
     <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/styleguide.css">
 </head>
 <body>
     <header class="container">
         <h1>ABCA Styleguide</h1>
     </header>
-    <section>
-
-    </section>
-    <aside></aside>
+    <div class="container">
+        <div class="row">
+            <section class="col-xl-12 col-sm-8">
+                {% block content %}{% endblock %}
+            </section>
+            <aside class="col-xl-12 col-sm-4">
+                <ul>
+                    <li><a href="/styleguide/typography">Typography</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
     <footer></footer>
 </body>
 </html>

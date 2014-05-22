@@ -9,3 +9,7 @@ def index(request):
     })
     return render(request, 'styleguide/index.html', context)
 
+def typography(request):
+    context = ''
+    return render(request, 'styleguide/typography.html', context)
+

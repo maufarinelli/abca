@@ -1,0 +1,41 @@
+@media (min-width: 1200px) {
+    html {
+      font-size: 75%; // Font base: 12px for min-width 1200px
+    }
+}
+
+/* ABCA font-family */
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+@media (min-width: 1200px) {
+    /* ABCA font-size for above width: 1200px */
+    body {
+        font-size: 16px;
+    }
+}
+
+/* ABCA Headings */
+h1, .h1 {
+  font-size: 3.6rem; // 36px for 10px font base // 43.2px for 12px font base
+}
+
+h2, .h2 {
+  font-size: 3.0rem; // 30px for 10px font base // 36px for 12px font base
+}
+
+h3, .h3 {
+  font-size: 2.4rem; // 24px for 10px font base // 28.8px for 12px font base
+}
+
+h4, .h4 {
+  font-size: 1.8rem; // 18px for 10px font base // 21.6px for 12px font base
+}
+
+h5, .h5 {
+  font-size: 1.4rem; // 14px for 10px font base // 16.8px for 12px font base
+}
+
+h6, .h6 {
+  font-size: 1.2rem; // 12px for 10px font base // 14.4px for 12px font base
+}
